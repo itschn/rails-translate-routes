@@ -219,9 +219,9 @@ class RailsTranslateRoutes
         end
       end
 
-      original_named_routes.each_key do |route_name|
-        route_set.named_routes.helpers.concat add_untranslated_helpers_to_controllers_and_views(route_name)
-      end
+      # original_named_routes.each_key do |route_name|
+      #   route_set.named_routes.helpers.concat add_untranslated_helpers_to_controllers_and_views(route_name)
+      # end
 
       if root_route = original_named_routes[:root]
         add_root_route root_route, route_set
